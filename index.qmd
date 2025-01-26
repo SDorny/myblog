@@ -1,14 +1,19 @@
 ---
-title: "blog"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "Hi, I'm Sarah Dorny."
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+    - icon: briefcase
+      text: Portfolio
+      href: https://www.datascienceportfol.io/sdorny
+
 ---
 
-
+Detail-oriented Data Scientist with over 2 years of industry experience in business intelligence and project management. Skilled in data extraction, modeling, and visualization to deliver actionable insights. Microsoft Power BI certified (PL-300).

@@ -1,9 +1,9 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
-date: "2025-01-15"
-categories: [news, code, analysis]
+title: "Why Teamwork Matters"
+author: "Sarah Dorny"
+date: "2025-02-10"
+categories: [Teamwork, Soft Skills]
 image: "image.jpg"
 ---
 
-This is a post with executable code.
+“If everyone is moving forward together, then success takes care of itself.” - Henry Ford

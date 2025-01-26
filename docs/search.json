@@ -2,16 +2,16 @@
   {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "title": "From Databricks to Power BI",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Everything you need to know about importing data from Databricks to Power BI.\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "blog",
+    "title": "Hi, I’m Sarah Dorny.",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 15, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 12, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Detail-oriented Data Scientist with over 2 years of industry experience in business intelligence and project management. Skilled in data extraction, modeling, and visualization to deliver actionable insights. Microsoft Power BI certified (PL-300)."
   },
   {
     "objectID": "about.html",
@@ -23,8 +23,78 @@
   {
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "title": "Why Teamwork Matters",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "“If everyone is moving forward together, then success takes care of itself.” - Henry Ford"
+  },
+  {
+    "objectID": "posts/first_blog_post/post.html",
+    "href": "posts/first_blog_post/post.html",
+    "title": "The Importance of a Workflow",
+    "section": "",
+    "text": "Mastering Your Workflow: A Data Analyst’s Roadmap to Success\nIn the world of data analysis, having a solid workflow isn’t just a nice-to-have—it’s your secret weapon for delivering exceptional results. A well-crafted workflow helps you:\n\nSet crystal-clear expectations for your project\nDefine and measure key outcomes with precision\nBoost your accuracy and efficiency\nConsistently deliver high-quality, insightful work\n\nEvery project is unique, and so is every workflow. But one thing remains constant: having a structured approach is always better than flying blind.\n\n\n1. Understanding the Business Case\nBefore diving into spreadsheets and data points, take a step back and think like a business owner. Your first mission? Gain a comprehensive understanding of the bigger picture. Ask yourself critical questions:\n\nWhat specific outcomes are we trying to impact?\nWho are the key stakeholders?\nWhat motivates these stakeholders?\nHow does my analysis fit into the broader organizational strategy?\n\nThis upfront clarity helps you align project requirements, define scope, and set meaningful desired outcomes from day one.\n\n\n2. Measurement Planning\nThink of your measurement plan as a treasure map leading to business success. It’s about defining what victory looks like and charting the course to get there. Key elements of an effective measurement plan include:\n\nDefining successful outcomes for the business\nIdentifying relevant Key Performance Indicators (KPIs)\nDetermining the data needed to track and optimize these metrics\n\nPro tip: Skipping this step is like setting sail without a compass. Don’t do it!\n\n\n3. Collect and Prep Data\nHere’s a hard truth: An analysis is only as powerful as the data supporting it. Always remember: “Garbage in, garbage out”. Data preparation is often the most challenging stage of the workflow, involving:\n\nRigorous quality assurance\nComprehensive data profiling\nStrategic feature engineering\nEfficient ETL (Extract, Transform, Load) automation\n\nConsider this stage your project’s foundation. Invest time here to ensure you’re working with clean, high-quality data.\n\n\n4. Understand the Data\nBefore you start analyzing, you must truly know your data. This means gaining a crystal-clear understanding of:\n\nData scope\nGranularity -Composition\nRelevant industry or domain context\n\nThis deep understanding enables efficient work and ensures you have precisely the right data to support your analysis.\n\n\n5. Analyze and Visualize\nData visualization is more than just creating pretty charts—it’s about translating complex information into clear, compelling narratives. Humans struggle to interpret raw data, so visualization provides the crucial translation. Your goal? Create visual cues that help stakeholders quickly understand complex patterns and insights.\n\n\n6. Develop Data-driven Insights\nHere’s a critical reminder: You’re not paid to analyze data. You’re paid to deliver meaningful insights and drive business outcomes. A powerful insight does two things:\n\nTells a clear, data-driven story\nProvides actionable recommendations that directly impact key business objectives\n\nThis is where many analysts fall short, so make it your differentiator.\n\n\n7. Measure, Test, Optimize\nCongratulations! You’ve completed your analysis and delivered actionable recommendations. Now it’s time to prove your impact. Focus on:\n\nTracking pre and post-changes to your KPIs\nQuantifying your work’s impact (ideally in monetary terms)\nIdentifying continuous improvement opportunities\n\n\nRemember, a great workflow isn’t about perfection—it’s about continuous learning and refinement. Each project is a chance to improve your approach and deliver more value. By embracing these workflow principles, you’ll transform from a data analyst into a strategic business partner who drives real, measurable change."
+  },
+  {
+    "objectID": "posts/first_blog_post/post.html#merriweather",
+    "href": "posts/first_blog_post/post.html#merriweather",
+    "title": "The Importance of a Workflow",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "From Databricks to Power BI\n\n\n\n\n\n\n\nTechnical\n\n\nPower BI\n\n\nDatabricks\n\n\n\n\n\n\n\n\n\n\n\nFeb 22, 2025\n\n\nSarah Dorny\n\n\n\n\n\n\n  \n\n\n\n\nWhy Teamwork Matters\n\n\n\n\n\n\n\nTeamwork\n\n\nSoft Skills\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2025\n\n\nSarah Dorny\n\n\n\n\n\n\n  \n\n\n\n\nThe Importance of a Workflow\n\n\n\n\n\n\n\nSoft Skills\n\n\nData Analytics\n\n\n\n\nWithout a process, you are flying blind.\n\n\n\n\n\n\nJan 25, 2022\n\n\nSarah Dorny\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/first_blog_post/post.html#understanding-the-business-landscape",
+    "href": "posts/first_blog_post/post.html#understanding-the-business-landscape",
+    "title": "The Importance of a Workflow",
+    "section": "",
+    "text": "Before diving into spreadsheets and data points, take a step back and think like a business owner. Your first mission? Gain a comprehensive understanding of the bigger picture. Ask yourself critical questions:\nWhat specific outcomes are we trying to impact? Who are the key stakeholders? What motivates these stakeholders? How does my analysis fit into the broader organizational strategy?\nThis upfront clarity helps you align project requirements, define scope, and set meaningful desired outcomes from day one."
+  },
+  {
+    "objectID": "posts/first_blog_post/post.html#crafting-your-measurement-roadmap",
+    "href": "posts/first_blog_post/post.html#crafting-your-measurement-roadmap",
+    "title": "The Importance of a Workflow",
+    "section": "",
+    "text": "Think of your measurement plan as a treasure map leading to business success. It’s about defining what victory looks like and charting the course to get there. Key elements of an effective measurement plan include:\nDefining successful outcomes for the business Identifying relevant Key Performance Indicators (KPIs) Determining the data needed to track and optimize these metrics\nPro tip: Skipping this step is like setting sail without a compass. Don’t do it!"
+  },
+  {
+    "objectID": "posts/first_blog_post/post.html#data-preparation-the-foundation-of-great-analysis",
+    "href": "posts/first_blog_post/post.html#data-preparation-the-foundation-of-great-analysis",
+    "title": "The Importance of a Workflow",
+    "section": "",
+    "text": "Here’s a hard truth: An analysis is only as powerful as the data supporting it. Data preparation is often the most challenging stage of the workflow, involving:\nRigorous quality assurance Comprehensive data profiling Strategic feature engineering Efficient ETL (Extract, Transform, Load) automation\nConsider this stage your project’s foundation. Invest time here to ensure you’re working with clean, high-quality data."
+  },
+  {
+    "objectID": "posts/first_blog_post/post.html#deep-data-understanding",
+    "href": "posts/first_blog_post/post.html#deep-data-understanding",
+    "title": "The Importance of a Workflow",
+    "section": "",
+    "text": "Before you start analyzing, you must truly know your data. This means gaining a crystal-clear understanding of:\nData scope Granularity Composition Relevant industry or domain context\nThis deep understanding enables efficient work and ensures you have precisely the right data to support your analysis.\n\n\nData visualization is more than just creating pretty charts—it’s about translating complex information into clear, compelling narratives. Humans struggle to interpret raw data, so visualization provides the crucial translation. Your goal? Create visual cues that help stakeholders quickly understand complex patterns and insights."
+  },
+  {
+    "objectID": "posts/first_blog_post/post.html#analyze-and-visualize",
+    "href": "posts/first_blog_post/post.html#analyze-and-visualize",
+    "title": "The Importance of a Workflow",
+    "section": "",
+    "text": "Data visualization is more than just creating pretty charts—it’s about translating complex information into clear, compelling narratives. Humans struggle to interpret raw data, so visualization provides the crucial translation. Your goal? Create visual cues that help stakeholders quickly understand complex patterns and insights."
+  },
+  {
+    "objectID": "posts/first_blog_post/post.html#develop-data-driven-insights",
+    "href": "posts/first_blog_post/post.html#develop-data-driven-insights",
+    "title": "The Importance of a Workflow",
+    "section": "",
+    "text": "Here’s a critical reminder: You’re not paid to analyze data. You’re paid to deliver meaningful insights and drive business outcomes. A powerful insight does two things:\nTells a clear, data-driven story Provides actionable recommendations that directly impact key business objectives\nThis is where many analysts fall short, so make it your differentiator."
+  },
+  {
+    "objectID": "posts/first_blog_post/post.html#measure-test-optimize",
+    "href": "posts/first_blog_post/post.html#measure-test-optimize",
+    "title": "The Importance of a Workflow",
+    "section": "",
+    "text": "Congratulations! You’ve completed your analysis and delivered actionable recommendations. Now it’s time to prove your impact. Focus on:\nTracking pre and post-changes to your KPIs Quantifying your work’s impact (ideally in monetary terms) Identifying continuous improvement opportunities\nRemember, a great workflow isn’t about perfection—it’s about continuous learning and refinement. Each project is a chance to improve your approach and deliver more value. By embracing these workflow principles, you’ll transform from a data analyst into a strategic business partner who drives real, measurable change."
   }
 ]
