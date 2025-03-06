@@ -2,7 +2,7 @@
 title: 'The Importance of a Workflow'
 author: "Sarah Dorny"
 date: '2022-01-25'
-image: "image.jpg"
+image: "workflow.png"
 categories: ['Soft Skills', 'Data Analytics']
 description: 'Without a process, you are flying blind.'
 execute: 

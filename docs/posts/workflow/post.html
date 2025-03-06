@@ -171,7 +171,9 @@ ul.task-list li input[type="checkbox"] {
 <li>Consistently deliver high-quality, insightful work</li>
 </ul>
 <p>Every project is unique, and so is every workflow. But one thing remains constant: having a structured approach is always better than flying blind.</p>
-<p><img src="Presentation1.jpg" class="img-fluid"></p>
+<section id="the-7-step-data-analyst-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="the-7-step-data-analyst-workflow">The 7-Step Data Analyst Workflow</h2>
+<p><img src="workflow.png" class="img-fluid"></p>
 <section id="understanding-the-business-case" class="level3">
 <h3 class="anchored" data-anchor-id="understanding-the-business-case">1. Understanding the Business Case</h3>
 <p>Before diving into spreadsheets and data points, take a step back and think like a business owner. Your first mission? Gain a comprehensive understanding of the bigger picture. Ask yourself critical questions:</p>
@@ -209,7 +211,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Before you start analyzing, you must truly know your data. This means gaining a crystal-clear understanding of:</p>
 <ul>
 <li>Data scope</li>
-<li>Granularity -Composition</li>
+<li>Granularity</li>
+<li>Composition</li>
 <li>Relevant industry or domain context</li>
 </ul>
 <p>This deep understanding enables efficient work and ensures you have precisely the right data to support your analysis.</p>
@@ -235,8 +238,73 @@ ul.task-list li input[type="checkbox"] {
 <li>Quantifying your work’s impact (ideally in monetary terms)</li>
 <li>Identifying continuous improvement opportunities</li>
 </ul>
-<hr>
-<p>Remember, a great workflow isn’t about perfection—it’s about continuous learning and refinement. Each project is a chance to improve your approach and deliver more value. By embracing these workflow principles, you’ll transform from a data analyst into a strategic business partner who drives real, measurable change.</p>
+</section>
+</section>
+<section id="real-world-example-e-commerce-customer-churn-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="real-world-example-e-commerce-customer-churn-analysis">Real-World Example: E-Commerce Customer Churn Analysis</h2>
+<p>Let’s walk through this workflow with a practical example: analyzing customer churn for an e-commerce company.</p>
+<section id="understanding-the-business-case-1" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-the-business-case-1">1. Understanding the Business Case</h3>
+<p><strong>Scenario:</strong> The marketing director approaches you concerned about declining customer retention rates.</p>
+<p><strong>Key Questions Addressed:</strong><br>
+- Business goal: Reduce customer churn by 15% within 6 months<br>
+- Stakeholders: Marketing, Sales, and Product teams<br>
+- Motivation: Customer acquisition costs are 5x higher than retention costs<br>
+- Strategic alignment: Company’s annual goal to increase customer lifetime value</p>
+</section>
+<section id="measurement-planning-1" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-planning-1">2. Measurement Planning</h3>
+<p><strong>Defined Success Metrics:</strong><br>
+- Primary KPI: 30-day customer churn rate<br>
+- Secondary KPIs: Repeat purchase rate, average time between purchases, cart abandonment rate<br>
+- Data needed: Transaction history, customer demographics, website behavior, support interactions</p>
+</section>
+<section id="collect-and-prep-data-1" class="level3">
+<h3 class="anchored" data-anchor-id="collect-and-prep-data-1">3. Collect and Prep Data</h3>
+<p><strong>Actions Taken:</strong><br>
+- Extracted 18 months of transaction data from the CRM<br>
+- Merged with customer profile data from the marketing database<br>
+- Cleaned inconsistent date formats and duplicate customer IDs<br>
+- Created feature for “days since last purchase” and “purchase frequency”<br>
+- Automated weekly data refresh using SQL stored procedures</p>
+</section>
+<section id="understand-the-data-1" class="level3">
+<h3 class="anchored" data-anchor-id="understand-the-data-1">4. Understand the Data</h3>
+<p><strong>Key Discoveries:</strong><br>
+- Data covered 45,000 customers and 120,000 transactions<br>
+- Granularity: Individual transaction level with timestamps<br>
+- Identified seasonal purchasing patterns<br>
+- Recognized that mobile app users had different behavior patterns than website users</p>
+</section>
+<section id="analyze-and-visualize-1" class="level3">
+<h3 class="anchored" data-anchor-id="analyze-and-visualize-1">5. Analyze and Visualize</h3>
+<p><strong>Approach:</strong><br>
+- Created cohort analysis showing retention rates by acquisition channel<br>
+- Developed a churn prediction model using purchase recency, frequency, and monetary value<br>
+- Visualized customer journey maps highlighting dropout points<br>
+- Built an interactive dashboard showing churn trends by customer segment</p>
+</section>
+<section id="develop-data-driven-insights-1" class="level3">
+<h3 class="anchored" data-anchor-id="develop-data-driven-insights-1">6. Develop Data-driven Insights</h3>
+<p><strong>Key Findings:</strong><br>
+- 64% of churned customers abandoned their shopping cart in their last session<br>
+- Customers who contacted support were 3x more likely to churn<br>
+- First-time customers who purchased during a major sale had 40% higher churn rates<br>
+- Recommendation: Implement targeted retention campaigns for high-risk segments with personalized offers based on previous purchase history</p>
+</section>
+<section id="measure-test-optimize-1" class="level3">
+<h3 class="anchored" data-anchor-id="measure-test-optimize-1">7. Measure, Test, Optimize</h3>
+<p><strong>Results:</strong><br>
+- A/B tested email re-engagement campaigns with 10% of at-risk customers<br>
+- Most effective campaign reduced churn by 22% in the test group<br>
+- Full implementation projected to save $250,000 annually in customer acquisition costs<br>
+- Continuing to refine customer segmentation based on new behavioral data</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Remember, a great workflow isn’t about perfection—it’s about continuous learning and refinement. Each project is a chance to improve your approach and deliver more value.</p>
+<p>By embracing these workflow principles, you’ll transform from a data analyst into a strategic business partner who drives real, measurable change. The e-commerce churn example demonstrates how following a structured workflow transforms raw data into valuable business outcomes—precisely what separates exceptional analysts from the rest.</p>
 
 
 </section>

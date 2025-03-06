@@ -4,7 +4,7 @@ author: "Sarah Dorny"
 date: "2025-03-05"
 categories: 
 description: 'A breakdown of each role, their responsibilities, and important skills.'
-image: "image.jpg"
+image: "snippet.png"
 ---
 
 # Understanding the Differences: Data Engineers, Data Analysts, and Data Scientists
