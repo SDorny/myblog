@@ -11,9 +11,8 @@ image: "pipeline.png"
 ![](pipeline.png)  
    
 
-## Executive Summary
+## Summary
 
-Our organization recently completed a strategic data platform migration from an on-premise SQL Server environment to a modern cloud-based analytics ecosystem centered on Azure Databricks. This transformation has enabled us to leverage advanced data processing capabilities, implement a robust data lakehouse architecture, and deliver more powerful business insights through enhanced visualization.
 
 ## Project Architecture
 

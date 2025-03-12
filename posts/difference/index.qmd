@@ -49,12 +49,12 @@ Data Scientists combine advanced statistical methods, machine learning, and doma
 - **Domain Expertise**: Understanding business context
 
 ### Daily Work
-A typical day for a Data Scientist might involve:
-- Developing predictive algorithms
-- Training and evaluating ML models
-- Conducting exploratory data analysis
-- Testing hypotheses with statistical methods
-- Researching new analytical approaches
+A typical day for a Data Scientist might involve:  
+- Developing predictive algorithms  
+- Training and evaluating ML models  
+- Conducting exploratory data analysis  
+- Testing hypotheses with statistical methods  
+- Researching new analytical approaches  
 
 ### Background
 Data Scientists typically have advanced degrees in quantitative fields like statistics, mathematics, computer science, or specialized data science programs.
@@ -74,12 +74,12 @@ Data Analysts focus on examining existing data to answer specific business quest
 - **Spreadsheet Mastery**: Advanced Excel or Google Sheets techniques
 
 ### Daily Work
-A typical day for a Data Analyst might involve:
-- Creating performance reports
-- Building interactive dashboards
-- Conducting A/B test analysis
-- Identifying trends in customer behavior
-- Presenting findings to stakeholders
+A typical day for a Data Analyst might involve:  
+- Creating performance reports  
+- Building interactive dashboards  
+- Conducting A/B test analysis  
+- Identifying trends in customer behavior  
+- Presenting findings to stakeholders  
 
 ### Background
 Data Analysts often come from diverse backgrounds including business, economics, mathematics, or even self-taught paths with strong analytical mindsets.
