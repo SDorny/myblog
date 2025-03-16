@@ -1,0 +1,38 @@
+---
+title: 'How I Found Out What I Want to Be When I Grow Up & How I Got There'
+author: "Sarah Dorny"
+date: '2022-01-25'
+image: "workflow.png"
+categories: ['Personal']
+description: 'The story of how I found out about the world of data and decided to make a life out of it.'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Hello! My Name is Sarah
+And I am a data enthusiast. But I wasn't always. Mostly because I didn't know it exsisted really. But suffice it to say, I have learned the ways and realized that's what I wanted to be when I grew up. Here's my story of why.
+
+### The Beginnings
+My interest was first peaked when I took an Intro to Databases class in college in 2022. As I went home and studied the first chapter of the textbook, this phrase stuck out to me: "Data, enriched by context, transforms into actionable knowledge".   
+  
+As a mortal who is prone to making plenty of mistakes, this stood out to me. There was actually a career that helped individuals make informed decisions that had a technical aspect? Sign me up!  
+
+So I did the first thing any reasonable person would do, I looked more into it... on my own time. This might sound absurd to the average college student, already studying 12 credits, working part time, and trying to have a social life while getting enough sleep. But I felt as though I needed to learn things and I couldn't expect to be hand fed it all.   
+
+### Analytics
+I started with what I was seeing at work. At the time I had taken over an open position on the Data Science team for the Call Center at Brigham Young University - Idaho and we were doing alot with Power BI. The reports we had were solid, marking key metrics and measuring how the business was doing. Without those reports, the Support Center would have just gone trends they saw overtime themselves or their perspective on how things were going. That was powerful to realize! I wanted to be a part of bringing awareness of how things actually were based on data we had gathered.
+
+But one problem... I had no idea how to develop reports, in Power BI or otherwise.
+
+So that became my first "on my own time" learning experience. I needed to become a Power BI master.
+
+I went on Udemy and found a course by Maven Analytics that was a Power BI report masterclass. It used the data
+
+### Science
+
+
+
+### Engineering
