@@ -2,8 +2,8 @@
 title: "Why Migrate to the Cloud?"
 author: "Sarah Dorny"
 date: "2025-03-05"
-categories: 
-description: 'A Deep Dive into Why Everyone Is Moving to the Cloud and Why You Should Consider It Too.'
+categories: ['Cloud', 'Concepts']
+description: 'A deep dive into why everyone is moving to the cloud and why you should consider it too.'
 image: "skyscraper.jpg"
 ---
 
@@ -19,7 +19,7 @@ Cloud computing delivers technology services—including computing power, storag
 
 ### Strategic Advantages of Cloud Migration     
 #### Operational Excellence  
-The latest and greatest technologies are now within your grasp. Here are some of the benefits they provide:  
+Moving to the cloud has many benefits. This is in part to the service models you have access to. But more on that in a moment. Here are some of the operating advantages available to you:     
     
 - Scalability: Dynamically adjust resources to match demand without capital expenditure on hardware  
 - Speed: Deploy new applications and services in minutes rather than weeks or months  
@@ -27,7 +27,7 @@ The latest and greatest technologies are now within your grasp. Here are some of
 - Security: Leverage enterprise-grade security measures and compliance certifications from major providers  
 
 #### Business Impact  
-Sure, it's good to have access to the most modern technologies, but how do these advantages impact you? Here are just a few ways:   
+So, how do the advantages listed above impact you? Here are just a few ways:   
    
 - Cost Efficiency: Convert capital expenses to operational expenses with predictable pricing models  
 - Innovation Acceleration: Access cutting-edge technologies without significant upfront investment  
