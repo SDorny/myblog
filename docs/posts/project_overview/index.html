@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sarah Dorny">
-<meta name="dcterms.date" content="2022-01-25">
-<meta name="description" content="The story of how I found out about the world of data and decided to make a life out of it.">
+<meta name="dcterms.date" content="2025-02-10">
+<meta name="description" content="A brief overview of my senior project: on-prem SQL server to the cloud.">
 
-<title>How I Found Out What I Want to Be When I Grow Up &amp; How I Got There – Sarah Dorny</title>
+<title>Project Overview – Sarah Dorny</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,14 +116,14 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">How I Found Out What I Want to Be When I Grow Up &amp; How I Got There</h1>
+      <h1 class="title">Project Overview</h1>
                   <div>
         <div class="description">
-          The story of how I found out about the world of data and decided to make a life out of it.
+          A brief overview of my senior project: on-prem SQL server to the cloud.
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">Personal</div>
+                <div class="quarto-category">Project</div>
               </div>
                   </div>
   </div>
@@ -141,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 25, 2022</p>
+        <p class="date">February 10, 2025</p>
       </div>
     </div>
     
@@ -160,27 +160,97 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="hello-my-name-is-sarah" class="level1">
-<h1>Hello! My Name is Sarah</h1>
-<p>And I am a data enthusiast. But I wasn’t always. Mostly because I didn’t know it exsisted really. But suffice it to say, I have learned the ways and realized that’s what I wanted to be when I grew up. Here’s my story of why.</p>
-<section id="the-beginnings" class="level3">
-<h3 class="anchored" data-anchor-id="the-beginnings">The Beginnings</h3>
-<p>My interest was first peaked when I took an Intro to Databases class in college in 2022. As I went home and studied the first chapter of the textbook, this phrase stuck out to me: “Data, enriched by context, transforms into actionable knowledge”.</p>
-<p>As a mortal who is prone to making plenty of mistakes, this stood out to me. There was actually a career that helped individuals make informed decisions that had a technical aspect? Sign me up!</p>
-<p>So I did the first thing any reasonable person would do, I looked more into it… on my own time. This might sound absurd to the average college student, already studying 12 credits, working part time, and trying to have a social life while getting enough sleep. But I felt as though I needed to learn things and I couldn’t expect to be hand fed it all.</p>
+<section id="behind-the-scenes-my-senior-project-on-cloud-data-migration" class="level1">
+<h1>Behind the Scenes: My Senior Project on Cloud Data Migration</h1>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Did you know that behind every analysis, dashboard, and report lies an intricate process of data wrangling? Before any insights can be drawn, data must first be collected, cleaned, and formatted appropriately. In the industry, this crucial work falls to Data Engineers – the unsung heroes who extract data from various sources, transform it through complex processes, and deliver it in a usable state to Data Scientists and Analysts. Without these engineers laying the groundwork, data analysis simply couldn’t happen.</p>
+<p>You might be wondering, “What does this data engineering work actually look like in practice?” That’s exactly what this blog post will show you.</p>
+<p>My senior project tackles a scenario that Data Engineers commonly face: migrating an existing data infrastructure to the cloud. If terms like “data migration” and “cloud infrastructure” sound like technical jargon, don’t worry – I’ve written another article called “Why Migrate to the Cloud?” that explains these concepts in more detail.</p>
+<p>Through this project, I hope to illuminate a vital but often overlooked aspect of the data world and highlight the essential role that Data Engineers play in enabling modern analytics.</p>
 </section>
-<section id="analytics" class="level3">
-<h3 class="anchored" data-anchor-id="analytics">Analytics</h3>
-<p>I started with what I was seeing at work. At the time I had taken over an open position on the Data Science team for the Call Center at Brigham Young University - Idaho and we were doing alot with Power BI. The reports we had were solid, marking key metrics and measuring how the business was doing. Without those reports, the Support Center would have just gone trends they saw overtime themselves or their perspective on how things were going. That was powerful to realize! I wanted to be a part of bringing awareness of how things actually were based on data we had gathered.</p>
-<p>But one problem… I had no idea how to develop reports, in Power BI or otherwise.</p>
-<p>So that became my first “on my own time” learning experience. I needed to become a Power BI master.</p>
-<p>I went on Udemy and found a course by Maven Analytics that was a Power BI report masterclass. It used the data</p>
+<section id="inspiration" class="level3">
+<h3 class="anchored" data-anchor-id="inspiration">Inspiration</h3>
+<p>The inspiration for this project emerged from an unexpected place – the ashes of a failed first idea. Sometimes the best opportunities arise from setbacks. This project presented the perfect balance: it satisfied the requirements for my senior project while filling critical knowledge gaps in my development as a Data Engineer. It allowed me to dive deep into cloud migration tools, understand the business considerations that drive cloud adoption decisions, and gain hands-on experience that textbooks simply can’t provide. The project became not just an academic requirement but a stepping stone in my professional journey.</p>
 </section>
-<section id="science" class="level3">
-<h3 class="anchored" data-anchor-id="science">Science</h3>
+<section id="background-context" class="level3">
+<h3 class="anchored" data-anchor-id="background-context">Background Context</h3>
+<p>Before diving into the technical details, let’s understand the foundation of this project. I chose Microsoft’s AdventureWorks, a practice database that simulates a fictional company specializing in bikes and accessories. This was an ideal starting point because it comes with a pre-built database backup (.bak file) that can be easily restored – allowing me to focus on the migration process rather than database creation.</p>
+<p>For the technical implementation, I selected tools from the Microsoft Azure ecosystem, which offers seamless integration with existing Microsoft products. The technology stack includes:</p>
+<ul>
+<li>Microsoft SQL Server (source database)<br>
+</li>
+<li>Microsoft Azure (cloud platform)<br>
+</li>
+<li>Azure Data Factory (data integration service)<br>
+</li>
+<li>Azure Data Lake Storage (scalable data storage)<br>
+</li>
+<li>Azure Databricks (analytics platform)</li>
+</ul>
+<p>This combination of tools represents a typical migration path for companies moving their Microsoft-based data systems to the cloud.</p>
+<p><img src="pipeline.png" class="img-fluid"></p>
 </section>
-<section id="engineering" class="level3">
-<h3 class="anchored" data-anchor-id="engineering">Engineering</h3>
+<section id="the-migration-process" class="level3">
+<h3 class="anchored" data-anchor-id="the-migration-process">The Migration Process</h3>
+<section id="step-1-setting-up-the-on-premises-environment" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-setting-up-the-on-premises-environment">Step 1: Setting Up the On-Premises Environment</h4>
+<p>First, I had to simulate a typical on-premises setup. I installed SQL Server on my local machine and restored the AdventureWorks lightweight database. This represented the legacy system that many companies still use today – a traditional relational database sitting on a physical server somewhere in the office.</p>
+<p>The database itself contained 10 tables spanning sales, production, purchasing, and human resources – a complex but realistic dataset that would test my migration skills.</p>
+</section>
+<section id="step-2-designing-the-cloud-architecture" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-designing-the-cloud-architecture">Step 2: Designing the Cloud Architecture</h4>
+<p>Before jumping into the migration, I needed a solid plan. I sketched out a modern data architecture with these components: Azure Data Factory for orchestration and data movement Azure Data Lake Storage Gen2 for a temporary storage location Azure Databricks for transformation and analysis into managed tables.</p>
+<p>This architecture follows the modern data lakehouse pattern, combining the flexibility of data lakes with the reliability and performance of data warehouses.</p>
+</section>
+<section id="step-3-extracting-the-data" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-extracting-the-data">Step 3: Extracting The Data</h4>
+<p>Using Azure Data Factory, I created pipelines to extract data from the on-premises SQL Server and load it into Azure Data Lake Storage. This process involved:</p>
+<ul>
+<li>Setting up a self-hosted integration runtime to connect to my local SQL Server<br>
+</li>
+<li>Creating linked services to connect to both source and destination<br>
+</li>
+<li>Developing extraction pipelines for ingesting the data</li>
+</ul>
+<p>One of the key challenges was encountering network errors. Thankfully with the integration runtime that Azure Data Factory has, that solved those issues.</p>
+</section>
+<section id="step-4-loading-and-transforming-the-data" class="level4">
+<h4 class="anchored" data-anchor-id="step-4-loading-and-transforming-the-data">Step 4: Loading and Transforming the Data</h4>
+<p>With the raw data in Azure Data Lake Storage, I used Azure Databricks to transform it into a more analysis-friendly format. This involved:</p>
+<ul>
+<li>Using the medallion architecture (bronze, silver, gold)</li>
+<li>Applying transformations to the data</li>
+<li>Creating aggregations for common analytics needs</li>
+<li>Implementing data quality checks</li>
+</ul>
+<p>I used Delta Live Tables for this to learn that method. That introduced its challenges and demanded that I write my code in a specific way, using SWE best practices to accomplish it.</p>
+</section>
+</section>
+<section id="challenges-and-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="challenges-and-solutions">Challenges and Solutions</h3>
+<section id="limited-budget" class="level4">
+<h4 class="anchored" data-anchor-id="limited-budget">Limited Budget</h4>
+<p>As a student, I had limited Azure credits. I could only do so much before running out of resources. So I carefully planned my architecture to minimize costs, using Azure’s free tier where possible and shutting down resources when not in use.</p>
+</section>
+<section id="skills" class="level4">
+<h4 class="anchored" data-anchor-id="skills">Skills</h4>
+<p>I needed to learn and even re-learn some tools I had previously worked with. There is so much to the migration, it takes planning and effort to accomplish.</p>
+</section>
+<section id="network-issues" class="level4">
+<h4 class="anchored" data-anchor-id="network-issues">Network Issues</h4>
+<p>Ideally, I would have loved to just pull from my on-prem SQL Server directly into Databricks, reducing the time and tools I needed to learn. But I realized that I was getting now where with the networks from my laptop to the cloud and quickly decided it wasn’t worth the fight for this project.</p>
+</section>
+</section>
+<section id="lessons-learned" class="level3">
+<h3 class="anchored" data-anchor-id="lessons-learned">Lessons Learned</h3>
+<p>This project taught me several valuable lessons: - Cloud migration is never just “lift and shift” – it requires rethinking how data is structured and processed - Data quality issues become extremely apparent during migration - Security and governance need to be baked in from the start, not added later - Automation is essential for repeatable, reliable processes - Documentation is crucial, especially for complex data pipelines</p>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>Data engineering might not be the most visible part of the data world, but it’s the foundation that everything else rests upon. This project gave me deep appreciation for the complexities involved in moving data infrastructure to the cloud.</p>
+<p>Whether you’re a fellow student, a professional looking to transition to data engineering, or someone just curious about what happens behind the scenes, I hope this project has given you insight into this fascinating field.</p>
+<p>Remember, before any data analysis can begin, someone has to make sure the data is available, clean, and ready to use. That’s what data engineers do, and I’m proud to be joining their ranks.</p>
 
 
 </section>

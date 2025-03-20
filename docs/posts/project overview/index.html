@@ -160,108 +160,87 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="project-overview-modernizing-analytics-with-cloud-migration" class="level1">
-<h1>Project Overview: Modernizing Analytics with Cloud Migration</h1>
+<section id="behind-the-scenes-my-senior-project-on-cloud-data-migration" class="level1">
+<h1>Behind the Scenes: My Senior Project on Cloud Data Migration</h1>
 <p><img src="pipeline.png" class="img-fluid"></p>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Did you know that behind every analysis, dashboard, and report lies an intricate process of data wrangling? Before any insights can be drawn, data must first be collected, cleaned, and formatted appropriately. In the industry, this crucial work falls to Data Engineers – the unsung heroes who extract data from various sources, transform it through complex processes, and deliver it in a usable state to Data Scientists and Analysts. Without these engineers laying the groundwork, data analysis simply couldn’t happen.</p>
+<p>You might be wondering, “What does this data engineering work actually look like in practice?” That’s exactly what this blog post will show you.</p>
+<p>My senior project tackles a scenario that Data Engineers commonly face: migrating an existing data infrastructure to the cloud. If terms like “data migration” and “cloud infrastructure” sound like technical jargon, don’t worry – I’ve written another article called “Why Migrate to the Cloud?” that explains these concepts in more detail.</p>
+<p>Through this project, I hope to illuminate a vital but often overlooked aspect of the data world and highlight the essential role that Data Engineers play in enabling modern analytics.</p>
 </section>
-<section id="project-architecture" class="level2">
-<h2 class="anchored" data-anchor-id="project-architecture">Project Architecture</h2>
-<p>Our solution architecture consists of six key components working in harmony:</p>
-<ol type="1">
-<li><strong>On-Premise SQL Server</strong> - Source database containing our operational data</li>
-<li><strong>Azure Data Factory</strong> - ETL pipeline orchestrator managing data movement</li>
-<li><strong>Azure Data Lake Storage Gen2 (ADLS Gen2)</strong> - Raw data storage (Bronze Layer)</li>
-<li><strong>Databricks</strong> - Managed data processing platform (Bronze, Silver, Gold layers)</li>
-<li><strong>Azure Key Vault</strong> - Secure credentials and secrets management</li>
-<li><strong>Power BI</strong> - Data visualization and reporting interface</li>
-</ol>
+<section id="inspiration" class="level3">
+<h3 class="anchored" data-anchor-id="inspiration">Inspiration</h3>
+<p>The inspiration for this project emerged from an unexpected place – the ashes of a failed first idea. Sometimes the best opportunities arise from setbacks. This project presented the perfect balance: it satisfied the requirements for my senior project while filling critical knowledge gaps in my development as a Data Engineer. It allowed me to dive deep into cloud migration tools, understand the business considerations that drive cloud adoption decisions, and gain hands-on experience that textbooks simply can’t provide. The project became not just an academic requirement but a stepping stone in my professional journey.</p>
 </section>
-<section id="data-flow-and-processing" class="level2">
-<h2 class="anchored" data-anchor-id="data-flow-and-processing">Data Flow and Processing</h2>
-<p>The end-to-end data flow follows a modern medallion architecture:</p>
-<section id="data-ingestion" class="level3">
-<h3 class="anchored" data-anchor-id="data-ingestion">Data Ingestion</h3>
+<section id="background-context" class="level3">
+<h3 class="anchored" data-anchor-id="background-context">Background Context</h3>
+<p>Before diving into the technical details, let’s understand the foundation of this project. I chose Microsoft’s AdventureWorks, a practice database that simulates a fictional company specializing in bikes and accessories. This was an ideal starting point because it comes with a pre-built database backup (.bak file) that can be easily restored – allowing me to focus on the migration process rather than database creation.</p>
+<p>For the technical implementation, I selected tools from the Microsoft Azure ecosystem, which offers seamless integration with existing Microsoft products. The technology stack includes:<br>
+- Microsoft SQL Server (source database)<br>
+- Microsoft Azure (cloud platform)<br>
+- Azure Data Factory (data integration service)<br>
+- Azure Data Lake Storage (scalable data storage)<br>
+- Azure Databricks (analytics platform)</p>
+<p>This combination of tools represents a typical migration path for companies moving their Microsoft-based data systems to the cloud.</p>
+</section>
+<section id="the-migration-process" class="level3">
+<h3 class="anchored" data-anchor-id="the-migration-process">The Migration Process</h3>
+<section id="step-1-setting-up-the-on-premises-environment" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-setting-up-the-on-premises-environment">Step 1: Setting Up the On-Premises Environment</h4>
+<p>First, I had to simulate a typical on-premises setup. I installed SQL Server on my local machine and restored the AdventureWorks lightweight database. This represented the legacy system that many companies still use today – a traditional relational database sitting on a physical server somewhere in the office.</p>
+<p>The database itself contained 10 tables spanning sales, production, purchasing, and human resources – a complex but realistic dataset that would test my migration skills.</p>
+</section>
+<section id="step-2-designing-the-cloud-architecture" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-designing-the-cloud-architecture">Step 2: Designing the Cloud Architecture</h4>
+<p>Before jumping into the migration, I needed a solid plan. I sketched out a modern data architecture with these components: Azure Data Factory for orchestration and data movement Azure Data Lake Storage Gen2 for a temporary storage location Azure Databricks for transformation and analysis into managed tables.</p>
+<p>This architecture follows the modern data lakehouse pattern, combining the flexibility of data lakes with the reliability and performance of data warehouses.</p>
+</section>
+<section id="step-3-extracting-the-data" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-extracting-the-data">Step 3: Extracting The Data</h4>
+<p>Using Azure Data Factory, I created pipelines to extract data from the on-premises SQL Server and load it into Azure Data Lake Storage. This process involved:<br>
+1. Setting up a self-hosted integration runtime to connect to my local SQL Server<br>
+2. Creating linked services to connect to both source and destination<br>
+3. Developing extraction pipelines for ingesting the data</p>
+<p>One of the key challenges was encountering network errors. Thankfully with the integration runtime that Azure Data Factory has, that solved those issues.</p>
+</section>
+<section id="step-4-loading-and-transforming-the-data" class="level4">
+<h4 class="anchored" data-anchor-id="step-4-loading-and-transforming-the-data">Step 4: Loading and Transforming the Data</h4>
+<p>With the raw data in Azure Data Lake Storage, I used Azure Databricks to transform it into a more analysis-friendly format. This involved:</p>
 <ul>
-<li>Azure Data Factory pipelines connect to on-premise SQL Server via secure integration runtime</li>
-<li>Incremental data extraction based on modified timestamps minimizes network traffic</li>
-<li>Raw data lands in ADLS Gen2 storage in the Bronze layer with original schema preserved</li>
+<li>Using the medallion architecture (bronze, silver, gold)</li>
+<li>Applying transformations to the data</li>
+<li>Creating aggregations for common analytics needs</li>
+<li>Implementing data quality checks</li>
 </ul>
-</section>
-<section id="data-processing" class="level3">
-<h3 class="anchored" data-anchor-id="data-processing">Data Processing</h3>
-<ul>
-<li>Databricks processes data through a three-tier medallion architecture:
-<ul>
-<li><strong>Bronze Layer</strong>: Raw data as extracted from source systems</li>
-<li><strong>Silver Layer</strong>: Cleansed, conformed, and validated data</li>
-<li><strong>Gold Layer</strong>: Business-level aggregates and enriched datasets optimized for analytics</li>
-</ul></li>
-</ul>
-</section>
-<section id="security-and-governance" class="level3">
-<h3 class="anchored" data-anchor-id="security-and-governance">Security and Governance</h3>
-<ul>
-<li>Azure Key Vault securely stores and manages all credentials and connection strings</li>
-<li>Role-based access control (RBAC) implemented at each layer</li>
-<li>Data lineage tracked throughout the pipeline</li>
-</ul>
-</section>
-<section id="visualization-and-insights" class="level3">
-<h3 class="anchored" data-anchor-id="visualization-and-insights">Visualization and Insights</h3>
-<ul>
-<li>Power BI connects directly to Databricks tables in the Gold layer</li>
-<li>Interactive dashboards provide business users with self-service analytics capabilities</li>
-<li>Scheduled refresh ensures reports contain up-to-date information</li>
-</ul>
+<p>I used Delta Live Tables for this to learn that method. That introduced its challenges and demanded that I write my code in a specific way, using SWE best practices to accomplish it.</p>
 </section>
 </section>
-<section id="business-benefits" class="level2">
-<h2 class="anchored" data-anchor-id="business-benefits">Business Benefits</h2>
-<p>This migration has delivered several significant business advantages:</p>
-<ol type="1">
-<li><strong>Enhanced Analytics Capabilities</strong>
-<ul>
-<li>Advanced data transformations using Spark SQL and Python</li>
-<li>Machine learning integration potential for predictive analytics</li>
-<li>Real-time data processing capabilities</li>
-</ul></li>
-<li><strong>Improved Performance</strong>
-<ul>
-<li>Query performance increased by 60% compared to previous environment</li>
-<li>Scalable compute resources adjust automatically to workload demands</li>
-<li>Parallel processing handles larger data volumes efficiently</li>
-</ul></li>
-<li><strong>Cost Optimization</strong>
-<ul>
-<li>Pay-for-use pricing model reduces overall infrastructure costs</li>
-<li>Elimination of on-premise hardware refresh cycles</li>
-<li>Reduced operational overhead for database administration</li>
-</ul></li>
-<li><strong>Future-Ready Platform</strong>
-<ul>
-<li>Architecture supports seamless integration of new data sources</li>
-<li>Framework established for incorporating unstructured data</li>
-<li>Foundation for implementing machine learning models</li>
-</ul></li>
-</ol>
+<section id="challenges-and-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="challenges-and-solutions">Challenges and Solutions</h3>
+<section id="limited-budget" class="level4">
+<h4 class="anchored" data-anchor-id="limited-budget">Limited Budget</h4>
+<p>As a student, I had limited Azure credits. I could only do so much before running out of resources. So I carefully planned my architecture to minimize costs, using Azure’s free tier where possible and shutting down resources when not in use.</p>
 </section>
-<section id="technical-implementation-highlights" class="level2">
-<h2 class="anchored" data-anchor-id="technical-implementation-highlights">Technical Implementation Highlights</h2>
-<p>Our implementation followed industry best practices:</p>
-<ul>
-<li><strong>Infrastructure as Code</strong>: All resources deployed using Azure ARM templates for consistency</li>
-<li><strong>CI/CD Integration</strong>: Automated deployment pipelines for Databricks notebooks and Data Factory pipelines</li>
-<li><strong>Monitoring</strong>: Comprehensive logging and alerting using Azure Monitor</li>
-<li><strong>Delta Lake Format</strong>: Implementation of transaction support and time travel capabilities</li>
-<li><strong>Optimized Storage</strong>: Data partitioning and Z-ordering for query performance</li>
-</ul>
+<section id="skills" class="level4">
+<h4 class="anchored" data-anchor-id="skills">Skills</h4>
+<p>I needed to learn and even re-learn some tools I had previously worked with. There is so much to the migration, it takes planning and effort to accomplish.</p>
 </section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The successful migration from our legacy on-premise SQL Server to a modern cloud analytics platform represents a significant milestone in our data transformation journey. This new foundation not only addresses our current analytical needs but positions us for future growth with a flexible, scalable architecture that can evolve with our business requirements.</p>
-<p>With data now flowing seamlessly from operational systems through our lakehouse architecture to insightful visualizations, business stakeholders can make more informed decisions based on trusted, timely data.</p>
+<section id="network-issues" class="level4">
+<h4 class="anchored" data-anchor-id="network-issues">Network Issues</h4>
+<p>Ideally, I would have loved to just pull from my on-prem SQL Server directly into Databricks, reducing the time and tools I needed to learn. But I realized that I was getting now where with the networks from my laptop to the cloud and quickly decided it wasn’t worth the fight for this project.</p>
+</section>
+</section>
+<section id="lessons-learned" class="level3">
+<h3 class="anchored" data-anchor-id="lessons-learned">Lessons Learned</h3>
+<p>This project taught me several valuable lessons: - Cloud migration is never just “lift and shift” – it requires rethinking how data is structured and processed - Data quality issues become extremely apparent during migration - Security and governance need to be baked in from the start, not added later - Automation is essential for repeatable, reliable processes - Documentation is crucial, especially for complex data pipelines</p>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>Data engineering might not be the most visible part of the data world, but it’s the foundation that everything else rests upon. This project gave me deep appreciation for the complexities involved in moving data infrastructure to the cloud.</p>
+<p>Whether you’re a fellow student, a professional looking to transition to data engineering, or someone just curious about what happens behind the scenes, I hope this project has given you insight into this fascinating field.</p>
+<p>Remember, before any data analysis can begin, someone has to make sure the data is available, clean, and ready to use. That’s what data engineers do, and I’m proud to be joining their ranks.</p>
 
 
 </section>
